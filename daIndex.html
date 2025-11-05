@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - Luke Edwards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p id="greeting"></p>
+  </header>
+
+  <h2>Introduction</h2>
+  <p>Hi! My name is Luke Edwards. I’m a <em>computer engineering</em> student minoring in <strong>computer science</strong> and <strong>cybersecurity</strong>.</p>
+  <p>I really enjoy coding and learning how computers work, using computers everyday, I find it facinating what is going on under the hood to make everyones lifes so muh eaiser and more effiencent.</p>
+  <p>When I’m not coding, I enjoy learning about new technology and how it works. Things like phones, gaming syetems, cybersecurtiy devices and other fun tools and toys</p>
+
+  <h2>Education</h2>
+  <p>I study at BYU, where I’m currently taking courses in programming, physics, and cybersecurity.</p>
+  <p>My favorite class I have taken so far at my time here at BYU is EcEn 224/225, where I got to build a ring doorbell and code it up. We also did some really fun bomb and attack labs.</p>
+  <p>Through these courses, I’m learning not just how to program, but how to think like an engineer and problem-solver hopfully to have me prepared ffor the future and getting a job, I want mucho mula hahahahaha.</p>
+
+  <h2>Hobbies</h2>
+  <p>In my free time, I like working on small coding projects, such as text-based games or embedded system experiments.</p>
+  <p>I also enjoy skateboarding and spending time outdoors with fiance, friends and family. I also have an addiction to a game on my phone called brawlstars. I also watch youtube a lot</p>
+  <p>On any given sunday you can also find me worshipping at my local LDS church. I am a memeber of the Church of Jesus Christ of Latter day Saints. I can tesitify of <strong>Jesus Christ</strong>and know the he is <em>my savior</em></p>
+  <p>Love all my readers and fans, bye</p>
+
+  <footer>
+    <p>Current time: <script>document.write(new Date().toLocaleString());</script></p>
+  </footer>
+
+  <script>
+    // Simple greeting based on time of day
+    const hour = new Date().getHours();
+    const greeting = document.getElementById("greeting");
+    if (hour < 12) greeting.textContent = "Good morning!";
+    else if (hour < 18) greeting.textContent = "Good afternoon!";
+    else greeting.textContent = "Good evening!";
+  </script>
+</body>
+</html>
